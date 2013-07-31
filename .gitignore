@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+*.aux
+*.make
+*.bbl
+*.blg
+*.d
+*.fls
+*.out
+*.pdf
+!*/fig/*.pdf
+*.out
+*.swp
+*.temp
