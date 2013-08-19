@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{letter} 
+\usepackage{lumletter}
+
+\usepackage[frenchb]{babel}	 % Document is in French. Could also be [english].
+\usepackage{fourier}         % A different font, for a change.
+\usepackage[T1]{fontenc}     % Use 8-bit output encoding.
+\usepackage[utf8]{inputenc}  % Can use UTF-8 in the source files.
+\usepackage{url}				     % We can use \url{http://www.xyz.com}.
+\usepackage{marvosym}        % Symbols, such as \Telefon and \Email.
+\usepackage{csquotes}
+\usepackage{hyperref}
+
+\begin{document} 
+
+\mine{
+  John Doe \\
+  Street 9 \\
+  1234  Sâchslühìt\\
+  \Telefon~055 555 12 34 \\
+  \Email~\email{your@email.com}
+}
+
+\theirs{
+  Jane Muster \\
+  c/o Jack Exemple \\
+  Allison Road \\
+  6789 Schlabadam \\ 
+}{Sâchslühìt, le \today}
+
+
+\subject{une demande un peu particulière}
+
+Madame, Monsieur,
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt risus
+at adipiscing dignissim. In hac habitasse platea dictumst. Morbi sed eros
+imperdiet orci lobortis feugiat.
+
+Nulla scelerisque dictum purus sit amet pulvinar. Pellentesque lobortis
+fermentum nisl non accumsan. Praesent in sollicitudin turpis. Maecenas ac elit
+ut felis elementum ultricies. Phasellus id orci felis.
+
+Aliquam dictum velit vitae nunc viverra tincidunt. Nulla eu ipsum
+semper sapien mollis congue id at lectus. Aenean ullamcorper nisi ut nunc
+aliquet lobortis. Donec sit amet malesuada erat, a pulvinar dolor.
+
+Je vous prie d'agréer, Madame, Monsieur, mes salutations les plus distinguées.
+
+\signature{John Doe}
+\end{document} 

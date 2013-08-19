@@ -1,0 +1,37 @@
+% lumletter.sty - a few simple macros for a letter.
+
+\usepackage{hyperref}
+\usepackage{url}				     % We can use \url{http://www.xyz.com}.
+\pagestyle{empty} % Pour enlever la numérotation des pages
+
+\def\theirs#1#2{
+  % http://tex.stackexchange.com/questions/13542
+  \vspace{-0.9cm}
+  \hfill\begin{tabular}{l@{}}
+    #1
+    \\ \\
+    #2
+  \end{tabular}
+}
+
+\def\mine#1{
+  \begin{flushleft}
+    #1
+  \end{flushleft}
+}
+
+\def\email#1{
+  \href{mailto:#1}{\nolinkurl{#1}}
+}
+
+\def\subject#1{
+  \vspace{1cm}
+  \textbf{Concerne : #1} \\
+  \rule[2.5mm]{\textwidth}{0.3mm}
+}
+
+\def\signature#1{
+  \vfill
+  \hfill\sc{#1}
+  \vspace{1cm}
+}
